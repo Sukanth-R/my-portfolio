@@ -1,16 +1,19 @@
 {
-  "name": "ksp_yarns",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@radix-ui/react-label": "^2.1.1",
     "@radix-ui/react-slot": "^1.1.1",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.8.1",
     "axios": "^1.7.9",
     "cra-template": "1.2.0",
     "framer-motion": "^6.5.1",
     "lucide-react": "^0.469.0",
     "mongoose": "^8.9.3",
     "next": "^15.1.6",
+    "particles.js": "^2.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-feather": "^2.0.10",
@@ -20,6 +23,7 @@
     "react-intersection-observer": "^9.15.1",
     "react-router-dom": "^7.1.5",
     "react-scripts": "5.0.1",
+    "react-scroll": "^1.9.3",
     "react-typing-effect": "^2.0.5",
     "styled-components": "^6.1.14",
     "web-vitals": "^4.2.4"
