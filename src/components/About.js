@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 const About = () => {
   const [activeTab, setActiveTab] = useState('about');
 
@@ -11,7 +10,7 @@ const About = () => {
           <div className="lg:w-2/5 flex justify-center">
             <div className="w-64 h-64 rounded-full bg-white bg-opacity-20 border-4 border-white/30 overflow-hidden shadow-xl hover:shadow-2xl transition-all">
               <img 
-                src="/images/profile.jpg" 
+                src="https://sukanth-r.github.io/my-portfolio/images/profile.jpg"
                 alt="Profile" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
