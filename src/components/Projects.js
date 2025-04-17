@@ -44,6 +44,120 @@ const Projects = () => {
         </div>
       `
     },
+    {
+      id: 1,
+      title: "E-Commerce Platform",
+      image: "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      description: "Full-featured e-commerce platform with secure checkout.",
+      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      gitLink: "#",
+      hostedLink: "#",
+      detailsContent: `
+        <div style="padding: 2rem; color: white;">
+          <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 1.5rem; background: linear-gradient(to right, #a78bfa, #ec4899); -webkit-background-clip: text; color: transparent;">
+            E-Commerce Platform
+          </h2>
+          <div style="display: grid; gap: 2rem;">
+            <div style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); padding: 1.5rem; border-radius: 0.5rem; border: 1px solid rgba(255, 255, 255, 0.1);">
+              <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: white;">Project Overview</h3>
+              <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 1rem;">
+                Complete e-commerce solution with product catalog, shopping cart, and secure checkout.
+              </p>
+              <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: white;">Key Features</h3>
+              <ul style="color: rgba(255, 255, 255, 0.8); padding-left: 1.25rem; list-style-type: disc;">
+                <li style="margin-bottom: 0.5rem;">Product catalog with filters</li>
+                <li style="margin-bottom: 0.5rem;">Shopping cart functionality</li>
+                <li style="margin-bottom: 0.5rem;">Stripe payment integration</li>
+              </ul>
+            </div>
+            <div style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); padding: 1.5rem; border-radius: 0.5rem; border: 1px solid rgba(255, 255, 255, 0.1);">
+              <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: white;">Technologies</h3>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+                <span style="padding: 0.25rem 0.75rem; background: rgba(255, 255, 255, 0.1); border-radius: 9999px; font-size: 0.875rem; color: white;">React</span>
+                <span style="padding: 0.25rem 0.75rem; background: rgba(255, 255, 255, 0.1); border-radius: 9999px; font-size: 0.875rem; color: white;">Node.js</span>
+                <span style="padding: 0.25rem 0.75rem; background: rgba(255, 255, 255, 0.1); border-radius: 9999px; font-size: 0.875rem; color: white;">MongoDB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      `
+    },
+    {
+      id: 1,
+      title: "E-Commerce Platform",
+      image: "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      description: "Full-featured e-commerce platform with secure checkout.",
+      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      gitLink: "#",
+      hostedLink: "#",
+      detailsContent: `
+        <div style="padding: 2rem; color: white;">
+          <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 1.5rem; background: linear-gradient(to right, #a78bfa, #ec4899); -webkit-background-clip: text; color: transparent;">
+            E-Commerce Platform
+          </h2>
+          <div style="display: grid; gap: 2rem;">
+            <div style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); padding: 1.5rem; border-radius: 0.5rem; border: 1px solid rgba(255, 255, 255, 0.1);">
+              <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: white;">Project Overview</h3>
+              <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 1rem;">
+                Complete e-commerce solution with product catalog, shopping cart, and secure checkout.
+              </p>
+              <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: white;">Key Features</h3>
+              <ul style="color: rgba(255, 255, 255, 0.8); padding-left: 1.25rem; list-style-type: disc;">
+                <li style="margin-bottom: 0.5rem;">Product catalog with filters</li>
+                <li style="margin-bottom: 0.5rem;">Shopping cart functionality</li>
+                <li style="margin-bottom: 0.5rem;">Stripe payment integration</li>
+              </ul>
+            </div>
+            <div style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); padding: 1.5rem; border-radius: 0.5rem; border: 1px solid rgba(255, 255, 255, 0.1);">
+              <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: white;">Technologies</h3>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+                <span style="padding: 0.25rem 0.75rem; background: rgba(255, 255, 255, 0.1); border-radius: 9999px; font-size: 0.875rem; color: white;">React</span>
+                <span style="padding: 0.25rem 0.75rem; background: rgba(255, 255, 255, 0.1); border-radius: 9999px; font-size: 0.875rem; color: white;">Node.js</span>
+                <span style="padding: 0.25rem 0.75rem; background: rgba(255, 255, 255, 0.1); border-radius: 9999px; font-size: 0.875rem; color: white;">MongoDB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      `
+    },
+    {
+      id: 1,
+      title: "E-Commerce Platform",
+      image: "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      description: "Full-featured e-commerce platform with secure checkout.",
+      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      gitLink: "#",
+      hostedLink: "#",
+      detailsContent: `
+        <div style="padding: 2rem; color: white;">
+          <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 1.5rem; background: linear-gradient(to right, #a78bfa, #ec4899); -webkit-background-clip: text; color: transparent;">
+            E-Commerce Platform
+          </h2>
+          <div style="display: grid; gap: 2rem;">
+            <div style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); padding: 1.5rem; border-radius: 0.5rem; border: 1px solid rgba(255, 255, 255, 0.1);">
+              <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: white;">Project Overview</h3>
+              <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 1rem;">
+                Complete e-commerce solution with product catalog, shopping cart, and secure checkout.
+              </p>
+              <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: white;">Key Features</h3>
+              <ul style="color: rgba(255, 255, 255, 0.8); padding-left: 1.25rem; list-style-type: disc;">
+                <li style="margin-bottom: 0.5rem;">Product catalog with filters</li>
+                <li style="margin-bottom: 0.5rem;">Shopping cart functionality</li>
+                <li style="margin-bottom: 0.5rem;">Stripe payment integration</li>
+              </ul>
+            </div>
+            <div style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); padding: 1.5rem; border-radius: 0.5rem; border: 1px solid rgba(255, 255, 255, 0.1);">
+              <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: white;">Technologies</h3>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+                <span style="padding: 0.25rem 0.75rem; background: rgba(255, 255, 255, 0.1); border-radius: 9999px; font-size: 0.875rem; color: white;">React</span>
+                <span style="padding: 0.25rem 0.75rem; background: rgba(255, 255, 255, 0.1); border-radius: 9999px; font-size: 0.875rem; color: white;">Node.js</span>
+                <span style="padding: 0.25rem 0.75rem; background: rgba(255, 255, 255, 0.1); border-radius: 9999px; font-size: 0.875rem; color: white;">MongoDB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      `
+    },
     // Add more projects as needed
   ];
 
@@ -151,7 +265,7 @@ const Projects = () => {
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.9, y: 20 }}
                 transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-                className="fixed inset-0 mt-24 z-50 flex items-center justify-center p-4"
+                className="fixed mt-24 inset-0 z-50 flex justify-center p-4"
               >
                 <div className="relative w-full max-w-4xl h-[80vh] bg-transparent rounded-xl overflow-hidden">
                   <motion.button
