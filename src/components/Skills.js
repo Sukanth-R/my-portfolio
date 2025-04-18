@@ -56,13 +56,13 @@ const Skills = () => {
               <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-violet-300 to-pink-300 text-2xl md:text-3xl font-semibold mb-6 text-center">
                 {category.title}
               </h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6">
                 {category.skills.map((skill, skillIndex) => (
                   <div 
                     key={skillIndex}
-                    className="flex flex-col items-center backdrop-blur-sm p-6 bg-white/20 rounded-xl border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 group transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
+                    className="flex flex-col items-center backdrop-blur-sm p-4 sm:p-6 bg-white/20 rounded-xl border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 group transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
                   >
-                    <div className="w-20 h-20 mb-4 flex items-center justify-center">
+                    <div className="w-14 h-14 sm:w-20 sm:h-20 mb-3 sm:mb-4 flex items-center justify-center">
                       <img 
                         src={skill.icon} 
                         alt={skill.name} 
@@ -70,7 +70,7 @@ const Skills = () => {
                         style={{ filter: 'brightness(1.1) contrast(1.25) saturate(1.1)' }}
                       />
                     </div>
-                    <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-pink-400 font-medium text-lg text-center">
+                    <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-pink-400 font-medium text-sm sm:text-lg text-center">
                       {skill.name}
                     </h3>
                   </div>
@@ -79,7 +79,6 @@ const Skills = () => {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
