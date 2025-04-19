@@ -3,7 +3,7 @@ const About = () => {
   const [activeTab, setActiveTab] = useState('about');
 
   return (
-    <section id="about" className="py-20 px-6 bg-black bg-opacity-30 backdrop-blur-sm">
+    <section id="about" className="py-20= px-6 bg-black bg-opacity-30 backdrop-blur-sm">
       <div className="container mx-auto max-w-5xl">
         <div className="flex flex-col lg:flex-row gap-10 items-center">
           {/* Profile Image - Perfectly aligned */}
