@@ -50,40 +50,49 @@ const About = () => {
             </div>
 
             {/* Content Area */}
-            <div className="text-white/90 text-base md:text-lg mx-1 leading-relaxed space-y-5">
+            <div className="text-white/90 text-base md:text-[16px] mx-1 leading-relaxed space-y-5">
               {activeTab === 'about' ? (
-                <>
-                  <p>
-                    I'm a full-stack developer specializing in modern JavaScript frameworks, with 5+ years of experience building scalable web applications.
-                  </p>
-                  <p>
-                    My expertise spans React ecosystems, Node.js backends, and cloud infrastructure, with a strong focus on performance and user experience.
-                  </p>
-                  <p>
-                    Beyond coding, I contribute to open-source projects and enjoy exploring the intersection of technology and design.
-                  </p>
-                </>
-              ) : (
+                 <>
+                 <p className="text-3xl font-bold bg-clip-text bg-gradient-to-r from-violet-400 to-pink-400">
+  <span className="text-white">Hi,hello I'm </span>
+  <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-pink-400">Sukanth R</span>
+</p>
+
+                 <p>
+                   I'm currently pursuing my degree in Information Technology in Kongu Engineering College,Perundurai while passionately building my skills as a full-stack developer. 
+                   I balance my academic coursework with hands-on coding projects to develop practical expertise alongside theoretical knowledge.
+                 </p>
+                 <p>
+                   My journey includes building projects with the MERN stack (MongoDB, Express, React, and Node.js), 
+                   and I'm constantly exploring new technologies through online courses, hackathons, and personal projects. 
+                   I've developed several web applications that demonstrate my growing capabilities in both frontend and backend development.
+                 </p>
+                 <p>
+                   What excites me most about development is the ability to turn ideas into functional, user-friendly applications. 
+                   I'm particularly interested in responsive design principles and creating accessible web experiences.
+                 </p>
+                 
+               </>
+             ) : (
                 <div className="space-y-5">
                   <div className="border-l-4 border-pink-400 pl-5 py-2 bg-white/5 rounded-r-lg">
-                    <h3 className="text-xl font-semibold">M.Sc. Computer Science</h3>
-                    <p className="text-gray-300 text-sm mt-1">Stanford University | 2018-2020</p>
+                    <h3 className="text-xl font-semibold">B.Tech Information Technology</h3>
+                    <p className="text-gray-300 text-sm mt-1">Kongu Engineering College | 2022-2026</p>
                     <p className="text-white/90 text-sm mt-2">
-                      Specialized in cloud computing architectures and distributed systems
+                      CGPA: 8.65*
                     </p>
                   </div>
                   <div className="border-l-4 border-violet-400 pl-5 py-2 bg-white/5 rounded-r-lg">
-                    <h3 className="text-xl font-semibold">B.Eng. Software Engineering</h3>
-                    <p className="text-gray-300 text-sm mt-1">MIT | 2014-2018</p>
+                    <h3 className="text-xl font-semibold">12th(HSC) & 10th(SSLC)</h3>
+                    <p className="text-gray-300 text-sm mt-1">Mahendra Matric Higher Secondary School | 2019-2020 & 2021-2022</p>
                     <p className="text-white/90 text-sm mt-2">
-                      Focused on full-stack development and database systems
+                      Passed out with a percentage of 93.67% in 12th and 99.4% in 10th
                     </p>
                   </div>
                   <div className="border-l-4 border-violet-400 pl-5 py-2 bg-white/5 rounded-r-lg">
                     <h3 className="text-xl font-semibold">Certifications</h3>
                     <ul className="list-disc pl-5 text-sm space-y-1 mt-1">
-                      <li>AWS Certified Solutions Architect</li>
-                      <li>Google Cloud Professional Developer</li>
+                      <li>Azure AI Engineer Associate</li>
                     </ul>
                   </div>
                 </div>
