@@ -6,7 +6,7 @@ const ParticlesBackground = () => {
     const script = document.createElement('script');
     script.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
     script.async = true;
-
+    
     script.onload = () => {
       if (window.particlesJS) {
         window.particlesJS('particles-js', {
@@ -19,13 +19,13 @@ const ParticlesBackground = () => {
               }
             },
             color: {
-              value: "#ffffff"
+              value: "#ffffff" // White particles
             },
             shape: {
               type: "circle"
             },
             opacity: {
-              value: 0.8,
+              value: 0.8, // More visible white particles
               random: true,
               anim: {
                 enable: true,
@@ -47,7 +47,7 @@ const ParticlesBackground = () => {
             line_linked: {
               enable: true,
               distance: 150,
-              color: "#ffffff",
+              color: "#ffffff", // White connecting lines
               opacity: 0.4,
               width: 1
             },
@@ -87,24 +87,6 @@ const ParticlesBackground = () => {
           },
           retina_detect: true
         });
-
-        // Handle resize/scroll to update canvas
-        const handleResize = () => {
-          if (window.particlesJS) {
-            window.particlesJS('particles-js').destroy(); // Destroy existing instance
-            window.particlesJS('particles-js', window.particlesJS.load('particles-js')); // Reload
-          }
-        };
-        window.addEventListener('resize', handleResize);
-        window.addEventListener('scroll', handleResize);
-
-        return () => {
-          window.removeEventListener('resize', handleResize);
-          window.removeEventListener('scroll', handleResize);
-          if (window.particlesJS) {
-            window.particlesJS('particles-js').destroy();
-          }
-        };
       }
     };
 
@@ -112,9 +94,6 @@ const ParticlesBackground = () => {
 
     return () => {
       document.body.removeChild(script);
-      if (window.particlesJS) {
-        window.particlesJS('particles-js').destroy();
-      }
     };
   }, []);
 
