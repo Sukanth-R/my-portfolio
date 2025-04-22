@@ -2,10 +2,10 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <section id="home" className="min-h-screen bg-black bg-opacity-10 backdrop-blur-xm flex items-center justify-center text-white px-4">
+    <section id="home" className="min-h-screen flex items-center justify-center text-white px-4">
       <div className="text-center">
-        <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-pink-400 text-4xl md:text-6xl font-bold mb-4">SUKANTH R</h1>
-        <p className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-pink-400 text-sm md:text-lg mb-8">
+        <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-pink-400 text-4xl md:text-6xl font-bold mb-4" style={{ fontFamily: "'Inter', sans-serif" }}>SUKANTH R</h1>
+        <p className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-pink-400 text-sm md:text-lg mb-8" style={{ fontFamily: "'Inter', sans-serif" }}>
           FULL STACK DEVELOPER | APP DEVELOPER | AZURE AI ENGINEER ASSOCIATE
         </p>
         

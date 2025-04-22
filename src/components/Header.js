@@ -23,6 +23,7 @@ const Header = () => {
     { name: 'About', to: 'about' },
     { name: 'Skills', to: 'skills' },
     { name: 'Projects', to: 'projects' },
+    {name:'Certifications' , to:'certificates'},
     { name: 'Achievements', to: 'achievements' },
     { name: 'Contact', to: 'contact' },
   ];
@@ -70,7 +71,7 @@ const Header = () => {
 
         {/* Mobile Navigation with dark blue background */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 bg-black bg-opacity-70 rounded-lg p-4 backdrop-blur-sm">
+          <nav className="md:hidden mt-4 bg-black bg-opacity-50 rounded-lg p-4 backdrop-blur-sm">
             <ul className="flex flex-col space-y-8">
               {navLinks.map((link) => (
                 <li key={link.to}>

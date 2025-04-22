@@ -12,20 +12,20 @@ const ParticlesBackground = () => {
         window.particlesJS('particles-js', {
           particles: {
             number: {
-              value: 100,
+              value: 120,
               density: {
                 enable: true,
                 value_area: 800
               }
             },
             color: {
-              value: "#ffffff"
+              value: "#ffffff" // White particles
             },
             shape: {
               type: "circle"
             },
             opacity: {
-              value: 0.8,
+              value: 0.8, // More visible white particles
               random: true,
               anim: {
                 enable: true,
@@ -47,7 +47,7 @@ const ParticlesBackground = () => {
             line_linked: {
               enable: true,
               distance: 150,
-              color: "#ffffff",
+              color: "#ffffff", // White connecting lines
               opacity: 0.4,
               width: 1
             },
@@ -87,24 +87,6 @@ const ParticlesBackground = () => {
           },
           retina_detect: true
         });
-
-        // Mobile viewport height adjustment
-        const handleResize = () => {
-          const container = document.getElementById('particles-js');
-          const vh = window.innerHeight * 0.01;
-          document.documentElement.style.setProperty('--vh', `${vh}px`);
-          
-          if (container) {
-            container.style.height = `${window.innerHeight}px`;
-          }
-        };
-
-        window.addEventListener('resize', handleResize);
-        handleResize();
-
-        return () => {
-          window.removeEventListener('resize', handleResize);
-        };
       }
     };
 
