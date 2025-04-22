@@ -92,7 +92,6 @@ const Achievements = () => {
     }
   ];
 
-  const selectedAchievement = achievements.find(item => item.id === selectedId);
 
   const handleCardClick = (id) => {
     setSelectedId(selectedId === id ? null : id);
@@ -153,7 +152,7 @@ const Achievements = () => {
                     transition={{ duration: 0.3 }}
                     layoutId={`mobile-details-${achievement.id}`}
                   >
-                    <div className="bg-gray-900 rounded-xl border border-white/10 mt-2 overflow-hidden">
+                    <div className="bg-black rounded-xl border border-white/10 mt-2 overflow-hidden">
                       <div className="relative h-48 w-full">
                         <img 
                           src={achievement.image} 
@@ -253,17 +252,7 @@ const Achievements = () => {
           </div>
         )}
 
-        <motion.div 
-          className="mt-16 text-center"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4 }}
-        >
-          <p className="text-white/60 mb-4">More achievements and recognitions</p>
-          <button className="px-6 py-2 bg-gradient-to-r from-violet-500/20 to-pink-500/20 text-white rounded-lg hover:from-violet-500/30 hover:to-pink-500/30 transition-all border border-white/10">
-            View Full Credentials
-          </button>
-        </motion.div>
+        
       </div>
     </section>
   );

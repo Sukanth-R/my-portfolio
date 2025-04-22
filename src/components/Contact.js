@@ -4,7 +4,7 @@ import { FiPhone, FiMail } from 'react-icons/fi';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-16 px-4 sm:px-6 bg-black bg-opacity-10 backdrop-blur-sm min-h-screen">
+    <section id="contact" className="py-6 px-4 sm:px-6 bg-black bg-opacity-10 backdrop-blur-sm min-h-screen">
       <div className="container mx-auto max-w-4xl">
         <motion.h2 
           className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-pink-400 text-3xl md:text-4xl font-bold text-center mb-12"

@@ -9,7 +9,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-black bg-opacity-20 backdrop-blur-sm border-t border-white/10 py-4 px-4">
+    <footer className="bg-black bg-opacity-20 backdrop-blur-sm border-t border-white/10 py-5 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col items-center">
           
