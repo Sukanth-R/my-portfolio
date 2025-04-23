@@ -8,6 +8,6 @@
   width: 100%;
   height: 100%;
   z-index: 0;
-  background-color: #000000; /* Dark blue background */
-  background-image: linear-gradient(315deg, #000000 0%, #000000 100%);
+  background-color:rgb(255, 255, 255); /* Dark blue background */
+  background-image: linear-gradient(315deg, #fffcdd 0%, #fffcdd 100%);
 }

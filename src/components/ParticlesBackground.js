@@ -19,7 +19,7 @@ const ParticlesBackground = () => {
               }
             },
             color: {
-              value: "#ffffff" // White particles
+              value: "#000000" // White particles
             },
             shape: {
               type: "circle"
@@ -47,7 +47,7 @@ const ParticlesBackground = () => {
             line_linked: {
               enable: true,
               distance: 150,
-              color: "#ffffff", // White connecting lines
+              color: "#000000", // White connecting lines
               opacity: 0.4,
               width: 1
             },

@@ -29,7 +29,7 @@ const Header = () => {
   ];
 
   return (
-    <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black bg-opacity-50 backdrop-blur-sm' : 'bg-transparent'}`}>
+    <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-[#fffcdd] bg-opacity-50 backdrop-blur-sm' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-end items-center"> {/* Changed to justify-end */}
 
@@ -39,13 +39,13 @@ const Header = () => {
               {navLinks.map((link) => (
                 <li key={link.to}>
                   <Link
-                    activeClass="text-blue-300 font-semibold"
+                    activeClass="text-gray-800 font-semibold"
                     to={link.to}
                     smooth={true}
                     duration={500}
                     spy={true}
                     offset={-80}
-                    className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-pink-400 hover:from-pink-500 hover:to-violet-500 text-lg cursor-pointer transition-colors duration-200"
+                    className="text-black text-lg cursor-pointer transition-colors duration-200"
                   >
                     {link.name}
                   </Link>
@@ -56,7 +56,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden text-white focus:outline-none"
+            className="md:hidden text-black focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -71,7 +71,7 @@ const Header = () => {
 
         {/* Mobile Navigation with dark blue background */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 bg-black bg-opacity-50 rounded-lg p-4 backdrop-blur-sm">
+          <nav className="md:hidden mt-4 bg-[#fffcdd] bg-opacity-50 rounded-lg p-4 backdrop-blur-sm">
             <ul className="flex flex-col space-y-8">
               {navLinks.map((link) => (
                 <li key={link.to}>
