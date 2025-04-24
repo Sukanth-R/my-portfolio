@@ -23,17 +23,20 @@ const Header = () => {
     { name: 'About', to: 'about' },
     { name: 'Skills', to: 'skills' },
     { name: 'Projects', to: 'projects' },
-    {name:'Certifications' , to:'certificates'},
+    { name: 'Certifications', to: 'certificates' },
     { name: 'Achievements', to: 'achievements' },
     { name: 'Contact', to: 'contact' },
   ];
 
   return (
-    <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black bg-opacity-50 backdrop-blur-sm' : 'bg-transparent'}`}>
+    <header
+      className={`fixed w-full z-50 transition-all duration-300 ${
+        isScrolled ? 'bg-black bg-opacity-50 backdrop-blur-sm' : 'bg-transparent'
+      } animate-[fade-in-down_0.5s_ease-out]`}
+    >
       <div className="container mx-auto px-4 py-3">
-        <div className="flex justify-end items-center"> {/* Changed to justify-end */}
-
-          {/* Desktop Navigation - now on the right */}
+        <div className="flex justify-end items-center">
+          {/* Desktop Navigation - on the right */}
           <nav className="hidden md:block my-3">
             <ul className="flex space-x-[60px]">
               {navLinks.map((link) => (
@@ -45,7 +48,7 @@ const Header = () => {
                     duration={500}
                     spy={true}
                     offset={-80}
-                    className="text-white text-lg cursor-pointer transition-colors duration-200"
+                    className="text-white text-lg cursor-pointer transition-colors duration-200 hover:text-pink-500"
                   >
                     {link.name}
                   </Link>
@@ -55,9 +58,10 @@ const Header = () => {
           </nav>
 
           {/* Mobile Menu Button */}
-          <button 
+          <button
             className="md:hidden text-white focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {isMenuOpen ? (
@@ -69,29 +73,31 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Mobile Navigation with dark blue background */}
-        {isMenuOpen && (
-          <nav className="md:hidden mt-4 bg-[black] bg-opacity-50 rounded-lg p-4 backdrop-blur-sm">
-            <ul className="flex flex-col space-y-8">
-              {navLinks.map((link) => (
-                <li key={link.to}>
-                  <Link
-                    activeClass="text-blue-300 font-semibold"
-                    to={link.to}
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    offset={-80}
-                    className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-pink-400 hover:from-pink-500 hover:to-violet-500 cursor-pointer transition-colors duration-200 py-2 px-4 rounded hover:bg-blue-800"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        )}
+        {/* Mobile Navigation with animation */}
+        <nav
+          className={`md:hidden mt-4 bg-black bg-opacity-50 rounded-lg p-4 backdrop-blur-sm transition-all duration-300 ease-in-out ${
+            isMenuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+          }`}
+        >
+          <ul className="flex flex-col space-y-8">
+            {navLinks.map((link) => (
+              <li key={link.to}>
+                <Link
+                  activeClass="text-blue-300 font-semibold"
+                  to={link.to}
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  offset={-80}
+                  className="text-white cursor-pointer transition-colors duration-200 py-2 px-4 rounded hover:bg-blue-800"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </div>
     </header>
   );

@@ -3,13 +3,12 @@ import { motion } from 'framer-motion';
 import { 
   FiLinkedin,
   FiGithub,
-  FiInstagram
 } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-black bg-opacity-20 backdrop-blur-sm border-t border-white/10 py-5 px-4">
+    <footer className="bg-black backdrop-blur-sm border-t border-white/10 py-5 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col items-center">
           
@@ -39,17 +38,7 @@ const Footer = () => {
               <FaWhatsapp className="text-xl" />
             </motion.a>
             
-            {/* Instagram */}
-            <motion.a
-              href="https://www.instagram.com/sukanth_rgs"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 bg-pink-500/10 hover:bg-pink-500/20 text-pink-300 rounded-lg border border-pink-500/20 transition-all"
-              whileHover={{ y: -3 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <FiInstagram className="text-xl" />
-            </motion.a>
+            
             
             {/* GitHub */}
             <motion.a

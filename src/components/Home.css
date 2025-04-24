@@ -1,0 +1,74 @@
+/* Smooth page load transition */
+.page-load {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Letter-by-letter animation */
+  .letter {
+    opacity: 0;
+    display: inline-block;
+    animation: fadeLetter 0.3s ease-in forwards;
+  }
+  
+  @keyframes fadeLetter {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Specific styling for name text to ensure visibility */
+  .name-text {
+    background: linear-gradient(to right, #a78bfa, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    /* Fallback for browsers that don't support background-clip: text */
+    color: #a78bfa;
+  }
+  
+  /* Ensure name text is visible even without gradient support */
+  @supports not (-webkit-background-clip: text) {
+    .name-text {
+      color: #a78bfa;
+    }
+  }
+  
+  /* Sequential fade-in for social links and buttons */
+  .social-links {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 2.5s;
+  }
+  
+  .buttons {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 3s;
+  }
+  
+  /* Wave emoji animation */
+  .wave {
+    display: inline-block;
+    animation: wave 1s infinite;
+  }
+  
+  @keyframes wave {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(20deg);
+    }
+    75% {
+      transform: rotate(-20deg);
+    }
+  }

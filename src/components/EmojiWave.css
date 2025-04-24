@@ -21,4 +21,60 @@
     60% { transform: rotate(0deg); }
     100% { transform: rotate(0deg); }
   }
-  
+  /* Ensure consistent font rendering */
+.font-sans {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .wave {
+    font-size: 1.2em; /* Adjust emoji size for mobile */
+  }
+}
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes letterIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-letterIn {
+  display: inline-block;
+  animation: letterIn 0.4s ease-out forwards;
+  opacity: 0;
+}
+
+/* Smooth transitions */
+.transition-all {
+  transition-property: all;
+}
+
+.transition-opacity {
+  transition-property: opacity;
+}
+
+.duration-700 {
+  transition-duration: 700ms;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
+}
