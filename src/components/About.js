@@ -3,7 +3,7 @@ const About = () => {
   const [activeTab, setActiveTab] = useState('about');
 
   return (
-    <section id="about" className="py-20 px-6 bg-[#fffcdd]">
+    <section id="about" className="py-20 px-6 bg-black">
       <div className="container mx-auto max-w-5xl">
         <div className="flex flex-col lg:flex-row gap-10 items-center">
           {/* Profile Image - Perfectly aligned */}
@@ -25,13 +25,13 @@ const About = () => {
             
             {/* Navigation Tabs */}
             <div className="flex">
-              <div className="flex space-x-3 bg-gray-500 rounded-full p-1">
+              <div className="flex space-x-3 bg-white bg-opacity-70 rounded-full p-1">
                 <button
                   onClick={() => setActiveTab('about')}
                   className={`px-7 py-2 text-sm md:text-base rounded-full transition-all ${
                     activeTab === 'about' 
                       ? 'bg-gradient-to-r from-violet-500 to-pink-500 text-black shadow-md' 
-                      : 'text-white hover:bg-white/20'
+                      : 'text-black hover:bg-white/20'
                   }`}
                 >
                   About Me
@@ -41,7 +41,7 @@ const About = () => {
                   className={`px-7 py-2 text-sm md:text-base rounded-full transition-all ${
                     activeTab === 'education' 
                       ? 'bg-gradient-to-r from-violet-500 to-pink-500 text-black shadow-md' 
-                      : 'text-white hover:bg-white/20'
+                      : 'text-black hover:bg-white/20'
                   }`}
                 >
                   Education
@@ -50,11 +50,11 @@ const About = () => {
             </div>
 
             {/* Content Area */}
-            <div className="text-black text-base md:text-[16px] mx-1 leading-relaxed space-y-5">
+            <div className="text-white text-base md:text-[16px] mx-1 leading-relaxed space-y-5">
               {activeTab === 'about' ? (
                  <>
                  <p className="text-3xl font-bold bg-clip-text bg-gradient-to-r from-violet-400 to-pink-400">
-  <span className="text-black">Hi,hello I'm </span>
+  <span className="text-white">Hi,hello I'm </span>
   <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-pink-400">Sukanth R</span>
 </p>
 
@@ -75,21 +75,21 @@ const About = () => {
                </>
              ) : (
                 <div className="space-y-5">
-                  <div className="border-l-4 border-pink-400 pl-5 py-2 bg-gray-100 rounded-r-lg">
+                  <div className="border-l-4 border-pink-400 pl-5 py-2 bg-black bg-opacity-50 rounded-r-lg">
                     <h3 className="text-xl font-semibold">B.Tech Information Technology</h3>
-                    <p className="text-gray-700 text-sm mt-1">Kongu Engineering College | 2022-2026</p>
-                    <p className="text-black/90 text-sm mt-2">
+                    <p className="text-white text-sm mt-1">Kongu Engineering College | 2022-2026</p>
+                    <p className="text-white/90 text-sm mt-2">
                       CGPA: 8.65*
                     </p>
                   </div>
-                  <div className="border-l-4 border-violet-400 pl-5 py-2 bg-gray-100 rounded-r-lg">
+                  <div className="border-l-4 border-violet-400 pl-5 py-2 bg-black bg-opacity-50 rounded-r-lg">
                     <h3 className="text-xl font-semibold">12th(HSC) & 10th(SSLC)</h3>
-                    <p className="text-gray-700 text-sm mt-1">Mahendra Matric Higher Secondary School | 2019-2020 & 2021-2022</p>
-                    <p className="text-black/90 text-sm mt-2">
+                    <p className="text-white text-sm mt-1">Mahendra Matric Higher Secondary School | 2019-2020 & 2021-2022</p>
+                    <p className="text-white/90 text-sm mt-2">
                       Passed out with a percentage of 93.67% in 12th and 99.4% in 10th
                     </p>
                   </div>
-                  <div className="border-l-4 border-violet-400 pl-5 py-2 bg-gray-100 rounded-r-lg">
+                  <div className="border-l-4 border-violet-400 pl-5 py-2 bg-black bg-opacity-50 rounded-r-lg">
                     <h3 className="text-xl font-semibold">Certifications</h3>
                     <ul className="list-disc pl-5 text-sm space-y-1 mt-1">
                       <li>Azure AI Engineer Associate</li>

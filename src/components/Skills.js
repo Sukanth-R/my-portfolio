@@ -44,7 +44,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 px-4 sm:px-6 bg-black bg-opacity-10">
+    <section id="skills" className="py-20 px-4 sm:px-6 bg-black bg-opacity-30 backdrop-blur-sm">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-pink-400 text-4xl md:text-5xl font-bold text-center mb-16">
           Technical Skills

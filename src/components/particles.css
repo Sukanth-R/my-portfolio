@@ -1,13 +1,24 @@
+/* components/ParticlesBackground.css */
 .particles-container {
-  will-change: transform;
-  position:fixed;
+  position: fixed;
   top: 0;
   left: 0;
-  bottom:0;
-  right:0;
   width: 100%;
   height: 100%;
   z-index: 0;
-  background-color:rgb(255, 255, 255); /* Dark blue background */
-  background-image: linear-gradient(315deg, #fffcdd 0%, #fffcdd 100%);
+  background: radial-gradient(ellipse at bottom, #000000 0%, #000000 100%);
+}
+
+/* Enhanced glow effect for standalone particles */
+#particles-js canvas {
+  filter: 
+    drop-shadow(0 0 6px rgba(58, 134, 255, 0.5))
+    drop-shadow(0 0 10px rgba(131, 56, 236, 0.3))
+    drop-shadow(0 0 15px rgba(255, 0, 110, 0.2));
+}
+
+/* Prevent interference with main content */
+.particles-js-canvas-el {
+  position: absolute;
+  pointer-events: none;
 }

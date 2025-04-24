@@ -1,3 +1,4 @@
+// components/ParticlesBackground.js
 import React, { useEffect } from 'react';
 import './particles.css';
 
@@ -12,53 +13,57 @@ const ParticlesBackground = () => {
         window.particlesJS('particles-js', {
           particles: {
             number: {
-              value: 120,
+              value:150,  // Optimal number for standalone particles
               density: {
                 enable: true,
                 value_area: 800
               }
             },
             color: {
-              value: "#000000" // White particles
+              value: ["#3a86ff", "#8338ec", "#ff006e", "#2bff00","#ff0000"] // DevForge colors
             },
             shape: {
-              type: "circle"
+              type: "circle",
+              stroke: {
+                width: 0
+              }
             },
             opacity: {
-              value: 0.8, // More visible white particles
+              value: 0.9,  // More visible particles
               random: true,
               anim: {
                 enable: true,
-                speed: 1,
-                opacity_min: 0.2,
+                speed: 0.8,
+                opacity_min: 0.4,
                 sync: false
               }
             },
             size: {
-              value: 3,
+              value: 5,  // Slightly larger
               random: true,
               anim: {
                 enable: true,
-                speed: 2,
-                size_min: 0.1,
+                speed: 4,
+                size_min: 1.5,  // Bigger minimum size
                 sync: false
               }
             },
             line_linked: {
-              enable: true,
-              distance: 150,
-              color: "#000000", // White connecting lines
-              opacity: 0.4,
-              width: 1
+              enable: false // Completely disabled
             },
             move: {
               enable: true,
-              speed: 1,
+              speed: 0.8,  // Slower movement
               direction: "none",
               random: true,
               straight: false,
               out_mode: "out",
-              bounce: false
+              bounce: false,
+              attract: {
+                enable: true,
+                rotateX: 1000,
+                rotateY: 2000
+              }
             }
           },
           interactivity: {
@@ -66,22 +71,24 @@ const ParticlesBackground = () => {
             events: {
               onhover: {
                 enable: true,
-                mode: "grab"
+                mode: "bubble"  // Particles grow on hover
               },
               onclick: {
                 enable: true,
-                mode: "push"
+                mode: "repulse" // Gentle push effect
               }
             },
             modes: {
-              grab: {
-                distance: 140,
-                line_linked: {
-                  opacity: 1
-                }
+              bubble: {
+                distance: 120,
+                size: 8,  // More noticeable growth
+                duration: 1.5,
+                opacity: 1,  // Full opacity on hover
+                speed: 2
               },
-              push: {
-                particles_nb: 4
+              repulse: {
+                distance: 80,
+                duration: 0.5
               }
             }
           },
