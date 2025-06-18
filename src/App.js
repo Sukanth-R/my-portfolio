@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import Projects from "./components/Projects";
 import Achieve from "./components/Achievements";
 import Contact from "./components/Contact";
+import Certification from "./components/Certifications";
 import Footer from "./footer";
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <About/>
         <Skills/>
         <Projects/>
+        <Certification/>
         <Achieve/>
         <Contact/>
         {/* Add other sections here */}

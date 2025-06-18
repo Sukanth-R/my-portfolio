@@ -59,9 +59,7 @@ const Home = () => {
   const hiText = "Hi, I'm".split('');
   const nameText = "SUKANTH R".split('');
   const titleText = "Full Stack Developer".split('');
-
-  // Debug log to confirm nameText
-  console.log('nameText:', nameText);
+  const degreeText = "B.TECH Information Technology".split('');
 
   return (
     <section 
@@ -96,12 +94,23 @@ const Home = () => {
               </span>
             ))}
           </h1>
-          <p className="text-white text-base md:text-2xl mb-6 tracking-widest font-sans">
+          <p className="text-white text-base md:text-2xl mb-2 tracking-widest font-sans">
             {titleText.map((char, index) => (
               <span
                 key={`title-${index}`}
                 className="letter"
                 style={{ animationDelay: `${(hiText.length * 0.05 + 0.5 + nameText.length * 0.05 + 0.5 + index * 0.05)}s` }}
+              >
+                {char === ' ' ? '\u00A0' : char}
+              </span>
+            ))}
+          </p>
+          <p className="text-white text-sm md:text-xl mb-6 tracking-widest font-sans">
+            {degreeText.map((char, index) => (
+              <span
+                key={`degree-${index}`}
+                className="letter"
+                style={{ animationDelay: `${(hiText.length * 0.05 + 0.5 + nameText.length * 0.1 + 0.5 + index * 0.05)}s` }}
               >
                 {char === ' ' ? '\u00A0' : char}
               </span>

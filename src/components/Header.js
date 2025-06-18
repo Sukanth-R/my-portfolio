@@ -23,7 +23,7 @@ const Header = () => {
     { name: 'About', to: 'about' },
     { name: 'Skills', to: 'skills' },
     { name: 'Projects', to: 'projects' },
-    { name: 'Certifications', to: 'certificates' },
+    { name: 'Certifications', to: 'certifications' },
     { name: 'Achievements', to: 'achievements' },
     { name: 'Contact', to: 'contact' },
   ];
@@ -73,13 +73,13 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Mobile Navigation with animation */}
+        {/* Mobile Navigation with animation - Height adjusted */}
         <nav
-          className={`md:hidden mt-4 bg-black bg-opacity-50 rounded-lg p-4 backdrop-blur-sm transition-all duration-300 ease-in-out ${
-            isMenuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+          className={`md:hidden bg-black bg-opacity-50 rounded-lg backdrop-blur-sm transition-all duration-300 ease-in-out ${
+            isMenuOpen ? 'max-h-[500px] opacity-100 mt-3 py-2' : 'max-h-0 opacity-0 overflow-hidden'
           }`}
         >
-          <ul className="flex flex-col space-y-8">
+          <ul className="flex flex-col space-y-3 px-4">
             {navLinks.map((link) => (
               <li key={link.to}>
                 <Link
@@ -89,7 +89,7 @@ const Header = () => {
                   duration={500}
                   spy={true}
                   offset={-80}
-                  className="text-white cursor-pointer transition-colors duration-200 py-2 px-4 rounded hover:bg-blue-800"
+                  className="text-white cursor-pointer transition-colors duration-200 py-1 block"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.name}
