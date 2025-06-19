@@ -22,6 +22,9 @@ const Contact = () => {
           .glow-hover:hover {
             animation: glow 1.5s ease-in-out infinite;
           }
+          section#contact {
+            margin-bottom: -1px; /* Ensure no gap between Contact and Footer */
+          }
         `}
       </style>
       <div className="container mx-auto max-w-5xl">

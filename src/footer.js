@@ -17,7 +17,7 @@ const Footer = () => {
 
   return (
     <footer 
-      className="bg-black backdrop-blur-md py-12 px-4 sm:px-8"
+      className="bg-black backdrop-blur-md py-12 px-4 sm:px-8 mt-0" // Added mt-0 to ensure no top margin
       style={{
         backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px)',
         backgroundSize: '20px 20px'

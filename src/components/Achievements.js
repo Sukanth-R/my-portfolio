@@ -1,13 +1,13 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FiAward, FiX } from 'react-icons/fi';
+import { FiAward, FiX, FiExternalLink } from 'react-icons/fi';
 
 const Achievements = () => {
   const [selectedId, setSelectedId] = useState(null);
   const [isMobileView, setIsMobileView] = useState(false);
   const cardRefs = useRef({});
 
-  React.useEffect(() => {
+  useEffect(() => {
     const checkIfMobile = () => {
       setIsMobileView(window.innerWidth < 768);
     };
@@ -20,74 +20,44 @@ const Achievements = () => {
   const achievements = [
     {
       id: 1,
-      title: "Azure AI Engineer Associate",
-      image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-      description: "Microsoft certified AI Engineer with expertise in building AI solutions on Azure.",
-      date: "June 2023"
+      title: "Hackathon Winner",
+      image: "https://sukanth-r.github.io/portfolio/images/mit.jpg",
+      description: "Runner-up in hackathon conducted by Madras Institute of Technology, Chennai.",
+      date: "March 16 & 17,2024",
+      certificateLink: "https://drive.google.com/file/d/1I1XwcU7qIp8otWoQDxLl9IDVKyqX-faJ/view?usp=drive_link"
     },
     {
       id: 2,
-      title: "Open Source Contributor",
-      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-      description: "Recognized contributor to major open source projects with 50+ merged PRs.",
-      date: "Ongoing"
+      title: "Hackathon Winner",
+      image: "https://sukanth-r.github.io/portfolio/images/zinna.jpg",
+      description: "Second prize  with a cash prize of Rs.2500/- in hackathon organized by Government Engineering College(IRTT),Erode.",
+      date: "November 8,2024",
+      certificateLink: "https://drive.google.com/file/d/16lWIjJGOg_Bn-asr2eM1W0_4lMWVCVAD/view?usp=drive_link"
     },
     {
       id: 3,
-      title: "Tech Conference Speaker",
-      image: "https://images.unsplash.com/photo-1431540015161-0bf868a2d407?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-      description: "Featured speaker at international developer conference on AI trends.",
-      date: "October 2021"
+      title: "Project Expo Winner",
+      image: "https://sukanth-r.github.io/portfolio/images/sasurie.jpg",
+      description: "First prize with a cash prize Rs.1000/- in project expo(Inovation Fair) organized by Sasurie College of Engineering.",
+      date: "October 26,2024",
+      certificateLink: "https://drive.google.com/file/d/1hCB95r0PQ0aB95_p_hXwPggQnv5Xd8RH/view?usp=drive_link"
     },
     {
       id: 4,
-      title: "Best Research Paper Award",
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-      description: "Awarded for outstanding research in machine learning applications.",
-      date: "May 2022"
+      title: "Hackathon Winner",
+      image: "https://sukanth-r.github.io/portfolio/images/csd.jpg",
+      description: "First prize with a cash prize of Rs.2000/- in 24 hours hackathon organized by Computer Science and Design department,Kongu Engineering College,Perundurai.",
+      date: "March 06,2025",
+      certificateLink: "https://drive.google.com/file/d/1Q0zK9GTghtwwQwQ7HEtMigv-FgPr4UMn/view?usp=drive_link"
     },
     {
       id: 5,
       title: "Hackathon Winner",
-      image: "https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-      description: "First place in national AI hackathon with innovative solution.",
-      date: "November 2022"
+      image: "https://sukanth-r.github.io/portfolio/images/it.jpg",
+      description: "First prize with a cash prize of Rs.1000/- in 30 hours hackathon organized by Information Technology department,Kongu Engineering College,Perundurai.",
+      date: "May 2 & 3,2025",
+      certificateLink: "https://drive.google.com/file/d/1mwyOlYadDLwjmgQky511ts3LBTP6pwIg/view?usp=drive_link"
     },
-    {
-      id: 6,
-      title: "Mentorship Program Lead",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-      description: "Led a successful mentorship program for junior developers.",
-      date: "2022-2023"
-    },
-    {
-      id: 7,
-      title: "Cloud Architect Certified",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-      description: "Certified in designing and implementing cloud solutions.",
-      date: "March 2023"
-    },
-    {
-      id: 8,
-      title: "Community Builder Award",
-      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-      description: "Recognized for building tech communities and organizing events.",
-      date: "September 2022"
-    },
-    {
-      id: 9,
-      title: "Data Science Specialist",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-      description: "Specialized in advanced data analysis and predictive modeling.",
-      date: "July 2022"
-    },
-    {
-      id: 10,
-      title: "Innovation Challenge Finalist",
-      image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-      description: "Reached finals in international innovation challenge.",
-      date: "April 2023"
-    }
   ];
 
   const handleCardClick = (id) => {
@@ -119,6 +89,11 @@ const Achievements = () => {
           .glow-hover:hover {
             animation: glow 1.5s ease-in-out infinite;
           }
+          .mobile-achievement-title {
+            white-space: normal;
+            word-break: break-word;
+            line-height: 1.4;
+          }
         `}
       </style>
       <div className="container mx-auto max-w-7xl">
@@ -137,7 +112,7 @@ const Achievements = () => {
             {achievements.map((achievement) => (
               <React.Fragment key={achievement.id}>
                 <motion.div
-                  ref={el => cardRefs.current[achievement.id] = el}
+                  ref={(el) => (cardRefs.current[achievement.id] = el)}
                   className="relative aspect-square cursor-pointer rounded-2xl overflow-hidden border border-white/20 hover:border-violet-500/50 glow-hover"
                   onClick={() => handleCardClick(achievement.id)}
                   layoutId={`mobile-card-${achievement.id}`}
@@ -152,7 +127,7 @@ const Achievements = () => {
                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
-                    <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-violet-300 to-pink-300 text-sm font-semibold truncate w-full">
+                    <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-violet-300 to-pink-300 text-sm font-semibold w-full mobile-achievement-title">
                       {achievement.title}
                     </h3>
                   </div>
@@ -192,19 +167,24 @@ const Achievements = () => {
                         </h3>
                       </div>
                       <p className="text-white/80 mb-4 text-sm leading-relaxed">{achievement.description}</p>
-                      <div className="flex justify-between items-center">
+                      <div className="flex justify-between items-center mb-4">
                         <span className="px-3 py-1.5 bg-white/10 rounded-full text-white/80 text-xs backdrop-blur-sm">
                           {achievement.date}
                         </span>
-                        <div className="flex space-x-2">
-                          <span className="px-3 py-1.5 bg-violet-500/20 rounded-full text-violet-300 text-xs">
-                            Award
-                          </span>
-                          <span className="px-3 py-1.5 bg-pink-500/20 rounded-full text-pink-300 text-xs">
-                            Tech
-                          </span>
-                        </div>
+                        
                       </div>
+                      {achievement.certificateLink && (
+                        <motion.a
+                          href={achievement.certificateLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-full py-3 bg-gradient-to-r from-violet-500/30 to-pink-500/30 text-white rounded-lg text-sm flex items-center justify-center gap-2 hover:from-violet-500/40 hover:to-pink-500/40 transition-all glow-hover"
+                          whileHover={{ scale: 1.03 }}
+                          whileTap={{ scale: 0.97 }}
+                        >
+                          <FiExternalLink size={16} /> View Certificate
+                        </motion.a>
+                      )}
                     </div>
                   </motion.div>
                 )}
@@ -244,19 +224,24 @@ const Achievements = () => {
                 
                 <div className="p-6 relative">
                   <p className="text-white/80 text-sm mb-4 leading-relaxed">{achievement.description}</p>
-                  <div className="flex justify-between items-center">
+                  <div className="flex justify-between items-center mb-4">
                     <span className="px-3 py-1.5 bg-white/10 rounded-full text-white/80 text-xs backdrop-blur-sm">
                       {achievement.date}
                     </span>
-                    <div className="flex space-x-2">
-                      <span className="px-3 py-1.5 bg-violet-500/20 rounded-full text-violet-300 text-xs">
-                        Certification
-                      </span>
-                      <span className="px-3 py-1.5 bg-pink-500/20 rounded-full text-pink-300 text-xs">
-                        AI
-                      </span>
-                    </div>
+                    
                   </div>
+                  {achievement.certificateLink && (
+                    <motion.a
+                      href={achievement.certificateLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full py-3 bg-gradient-to-r from-violet-500/30 to-pink-500/30 text-white rounded-lg text-sm flex items-center justify-center gap-2 hover:from-violet-500/40 hover:to-pink-500/40 transition-all glow-hover"
+                      whileHover={{ scale: 1.03 }}
+                      whileTap={{ scale: 0.97 }}
+                    >
+                      <FiExternalLink size={16} /> View Certificate
+                    </motion.a>
+                  )}
                 </div>
               </motion.div>
             ))}

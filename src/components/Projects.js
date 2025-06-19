@@ -79,6 +79,37 @@ const Projects = () => {
         </div>
       `
     },
+    {
+      id: 3,
+      title: "Simple Calculator",
+      image: "https://t4.ftcdn.net/jpg/11/29/36/71/360_F_1129367146_3y83JadI7GXQQtfEQAXFYZFqe2juWZlz.jpg",
+      description: "A simple calculator that performs arithmetic operation.",
+      technologies: ["HTML","CSS","JavaScript","Bootstrap"],
+      gitLink: "https://github.com/Sukanth-R/calculator.git",
+      hostedLink: "https://sukanth-r.github.io/calculator/",
+      date: "June 2023",
+      detailsContent: `
+        <div style="padding: 2rem; color: white;">
+          <h2 style="font-size: 1.75rem; font-weight: bold; margin-bottom: 1.5rem; background: linear-gradient(to right, #a78bfa, #ec4899); -webkit-background-clip: text; color: transparent;">
+            VR Platform Details
+          </h2>
+          <div style="display: grid; gap: 1.5rem;">
+            <div style="background: rgba(255, 255, 255, 0.05); padding: 1.5rem; border-radius: 0.75rem; border: 1px solid rgba(255, 255, 255, 0.1);">
+              <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem; color: white;">Project Overview</h3>
+              <p style="color: rgba(255, 255, 255, 0.85); margin-bottom: 0.75rem; font-size: 0.95rem;">
+                A simple calculator designed using html,css,javascript and bootstrap to perform arithmetic operation.
+              </p>
+              <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem; color: white;">Key Features</h3>
+              <ul style="color: rgba(255, 255, 255, 0.85); padding-left: 1.25rem; list-style-type: disc; font-size: 0.95rem;">
+                <li style="margin-bottom: 0.5rem;">The site is designed to provide a simple calculation</li>
+                <li style="margin-bottom: 0.5rem;">A clean, minimal loading screen eases users</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      `
+    },
+    
     // Add more projects as needed
   ];
 

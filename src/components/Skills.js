@@ -38,7 +38,6 @@ const Skills = () => {
       title: 'Version Control & Frameworks',
       skills: [
         { name: 'Git', icon: 'https://images.seeklogo.com/logo-png/30/2/github-logo-png_seeklogo-304612.png' },
-        { name: '.NET', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/1200px-Microsoft_.NET_logo.svg.png' },
       ]
     }
   ];
