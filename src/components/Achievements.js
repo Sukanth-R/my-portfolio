@@ -21,7 +21,7 @@ const Achievements = () => {
     {
       id: 1,
       title: "Hackathon Winner",
-      image: "https://sukanth-r.github.io/portfolio/images/mit.jpg",
+      image: "https://sukanth-r.github.io/my-portfolio/images/mit.jpg",
       description: "Runner-up in hackathon conducted by Madras Institute of Technology, Chennai.",
       date: "March 16 & 17,2024",
       certificateLink: "https://drive.google.com/file/d/1I1XwcU7qIp8otWoQDxLl9IDVKyqX-faJ/view?usp=drive_link"
@@ -29,7 +29,7 @@ const Achievements = () => {
     {
       id: 2,
       title: "Hackathon Winner",
-      image: "https://sukanth-r.github.io/portfolio/images/zinna.jpg",
+      image: "https://sukanth-r.github.io/my-portfolio/images/zinna.jpg",
       description: "Second prize  with a cash prize of Rs.2500/- in hackathon organized by Government Engineering College(IRTT),Erode.",
       date: "November 8,2024",
       certificateLink: "https://drive.google.com/file/d/16lWIjJGOg_Bn-asr2eM1W0_4lMWVCVAD/view?usp=drive_link"
@@ -37,7 +37,7 @@ const Achievements = () => {
     {
       id: 3,
       title: "Project Expo Winner",
-      image: "https://sukanth-r.github.io/portfolio/images/sasurie.jpg",
+      image: "https://sukanth-r.github.io/my-portfolio/images/sasurie.jpg",
       description: "First prize with a cash prize Rs.1000/- in project expo(Inovation Fair) organized by Sasurie College of Engineering.",
       date: "October 26,2024",
       certificateLink: "https://drive.google.com/file/d/1hCB95r0PQ0aB95_p_hXwPggQnv5Xd8RH/view?usp=drive_link"
@@ -45,7 +45,7 @@ const Achievements = () => {
     {
       id: 4,
       title: "Hackathon Winner",
-      image: "https://sukanth-r.github.io/portfolio/images/csd.jpg",
+      image: "https://sukanth-r.github.io/my-portfolio/images/csd.jpg",
       description: "First prize with a cash prize of Rs.2000/- in 24 hours hackathon organized by Computer Science and Design department,Kongu Engineering College,Perundurai.",
       date: "March 06,2025",
       certificateLink: "https://drive.google.com/file/d/1Q0zK9GTghtwwQwQ7HEtMigv-FgPr4UMn/view?usp=drive_link"
@@ -53,7 +53,7 @@ const Achievements = () => {
     {
       id: 5,
       title: "Hackathon Winner",
-      image: "https://sukanth-r.github.io/portfolio/images/it.jpg",
+      image: "https://sukanth-r.github.io/my-portfolio/images/it.jpg",
       description: "First prize with a cash prize of Rs.1000/- in 30 hours hackathon organized by Information Technology department,Kongu Engineering College,Perundurai.",
       date: "May 2 & 3,2025",
       certificateLink: "https://drive.google.com/file/d/1mwyOlYadDLwjmgQky511ts3LBTP6pwIg/view?usp=drive_link"
