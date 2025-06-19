@@ -40,7 +40,7 @@ const Home = () => {
   const Buttons = useMemo(() => (
     <div className="buttons flex flex-row gap-3 justify-center md:justify-start">
       <a 
-        href="/resume.pdf" 
+        href="https://drive.google.com/file/d/1IMUBzFOLwl_oj_3PlyTVkOakQD3byvSN/view?usp=drive_link" 
         download
         className="bg-gradient-to-r from-violet-500 to-pink-500 text-white px-6 py-2 md:px-10 md:py-3 rounded-3xl font-medium hover:opacity-90 transition-opacity text-center text-sm md:text-base whitespace-nowrap"
       >
