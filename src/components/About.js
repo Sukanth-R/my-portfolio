@@ -25,27 +25,15 @@ const About = () => {
         `}
       </style>
       <div className="container mx-auto max-w-6xl">
-        <div className="flex flex-col lg:flex-row gap-12 items-center">
-          {/* Profile Image */}
-          <div className="lg:w-2/5 flex justify-center">
-            <div className="relative w-80 h-80 rounded-2xl bg-gradient-to-br from-white/10 to-white/5 border-4 border-white/20 overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 glow-hover">
-              <div className="absolute inset-0 bg-gradient-to-r from-violet-500/10 to-pink-500/10 opacity-0 hover:opacity-100 transition-opacity duration-500"></div>
-              <img 
-                src="https://sukanth-r.github.io/my-portfolio/images/profile.jpg"
-                alt="Profile" 
-                className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
-              />
-            </div>
-          </div>
-          
+        <div className="flex flex-col lg:flex-row gap-12 items-center justify-center">
           {/* Content Section */}
-          <div className="lg:w-3/5 space-y-8">
-            <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-pink-500 text-4xl md:text-5xl font-extrabold tracking-tight">
+          <div className="lg:w-5/5 w-full space-y-8 mx-auto">
+            <h2 className="text-transparent text-center bg-clip-text bg-gradient-to-r from-violet-500 to-pink-500 text-4xl md:text-5xl font-extrabold tracking-tight">
               About Me
             </h2>
             
             {/* Navigation Tabs */}
-            <div className="flex justify-center lg:justify-start">
+            <div className="flex justify-center lg:justify-center">
               <div className="flex space-x-4 bg-white/10 backdrop-blur-md rounded-full p-1.5 shadow-lg">
                 <button
                   onClick={() => setActiveTab('about')}
