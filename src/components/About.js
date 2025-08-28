@@ -121,7 +121,7 @@ const About = () => {
                       <div className="absolute left-0 top-0 w-3 h-3 bg-pink-500 rounded-full group-hover:scale-125 transition-transform"></div>
                       <h3 className="text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-pink-400">B.Tech Information Technology</h3>
                       <p className="text-white/90 text-sm mt-1">Kongu Engineering College | 2022-2026</p>
-                      <p className="text-white/80 text-sm mt-2">CGPA: 8.65*</p>
+                      <p className="text-white/80 text-sm mt-2">CGPA: 8.54*</p>
                     </div>
                     <div className="relative pl-8 py-4 group hover:bg-white/10 transition-all duration-300 rounded-xl">
                       <div className="absolute left-0 top-0 w-3 h-3 bg-violet-500 rounded-full group-hover:scale-125 transition-transform"></div>
