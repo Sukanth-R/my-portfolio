@@ -25,7 +25,7 @@ const ParticlesBackground = () => {
               }
             },
             color: {
-              value: ["#3a86ff", "#8338ec", "#ff006e", "#2bff00", "#ff0000"]
+              value: ["#ff6b6b","#727272", "#ffffff", "#ff0000"]
             },
             shape: {
               type: "circle",

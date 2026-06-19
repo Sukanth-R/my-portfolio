@@ -146,3 +146,7 @@ html {
     font-size: 0.75rem !important;
   }
 }
+
+.active-nav {
+  @apply text-black font-bold;
+}

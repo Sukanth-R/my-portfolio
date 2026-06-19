@@ -32,13 +32,13 @@
     color: transparent;
     display: inline-block;
     /* Fallback for browsers that don't support background-clip: text */
-    color: #a78bfa;
+    color: #b4121b;
   }
   
   /* Ensure name text is visible even without gradient support */
   @supports not (-webkit-background-clip: text) {
     .name-text {
-      color: #a78bfa;
+      color: #b4121b;
     }
   }
   

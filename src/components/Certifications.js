@@ -26,19 +26,19 @@ const Certifications = () => {
     >
       <style>
         {`
-          @keyframes glow {
-            0% { box-shadow: 0 0 5px rgba(139, 92, 246, 0.3); }
-            50% { box-shadow: 0 0 20px rgba(139, 92, 246, 0.5); }
-            100% { box-shadow: 0 0 5px rgba(139, 92, 246, 0.3); }
+          @keyframes certGlow {
+            0% { box-shadow: 0 0 5px rgba(180, 18, 27, 0.28); }
+            50% { box-shadow: 0 0 20px rgba(180, 18, 27, 0.55); }
+            100% { box-shadow: 0 0 5px rgba(180, 18, 27, 0.28); }
           }
-          .glow-hover:hover {
-            animation: glow 1.5s ease-in-out infinite;
+          .cert-glow-hover:hover {
+            animation: certGlow 1.5s ease-in-out infinite;
           }
         `}
       </style>
       <div className="container mx-auto max-w-7xl">
         <motion.h2 
-          className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-pink-500 text-4xl md:text-6xl font-extrabold text-center mb-20 tracking-tight"
+          className="text-transparent bg-clip-text bg-gradient-to-r from-[#b4121b] to-red-500 text-4xl md:text-6xl font-extrabold text-center mb-20 tracking-tight"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -50,13 +50,13 @@ const Certifications = () => {
           {certifications.map((cert, index) => (
             <motion.div
               key={cert.id}
-              className="relative bg-gradient-to-br from-white/10 to-white/5 rounded-2xl border border-white/20 hover:border-violet-500/50 glow-hover overflow-hidden transition-all duration-500 backdrop-blur-md"
+              className="relative bg-gradient-to-br from-white/10 to-white/5 rounded-2xl border border-white/20 hover:border-red-800/50 cert-glow-hover overflow-hidden transition-all duration-500 backdrop-blur-md"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              whileHover={{ y: -8, boxShadow: '0 10px 30px rgba(139, 92, 246, 0.2)' }}
+              whileHover={{ y: -8, boxShadow: '0 10px 30px rgba(180, 18, 27, 0.25)' }}
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-violet-500/10 to-pink-500/10 opacity-0 hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-red-500/10 to-red-800/10 opacity-0 hover:opacity-100 transition-opacity duration-500"></div>
               <div className="h-56 overflow-hidden">
                 <img 
                   src={cert.image} 
@@ -66,7 +66,7 @@ const Certifications = () => {
               </div>
               
               <div className="p-6 relative">
-                <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-pink-400 text-xl font-bold mb-3">
+                <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-[#b4121b] to-red-500 text-xl font-bold mb-3">
                   {cert.title}
                 </h3>
                 <p className="text-white/80 text-sm mb-3">{cert.issuer}</p>
@@ -78,7 +78,7 @@ const Certifications = () => {
                     href={cert.certificateLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2 bg-gradient-to-r from-violet-500/30 to-pink-500/30 text-white rounded-lg text-sm flex items-center gap-2 hover:from-violet-500/40 hover:to-pink-500/40 transition-all glow-hover"
+                    className="px-4 py-2 bg-gradient-to-r from-red-500/30 to-red-800/30 text-white rounded-lg text-sm flex items-center gap-2 hover:from-red-500/40 hover:to-red-800/40 transition-all cert-glow-hover"
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.97 }}
                   >

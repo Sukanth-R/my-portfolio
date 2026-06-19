@@ -31,24 +31,28 @@ const Header = () => {
   return (
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-black bg-opacity-50 backdrop-blur-sm' : 'bg-transparent'
+        isScrolled ? 'bg-[#b4121b]' : 'bg-[#b4121b]'
       } animate-[fade-in-down_0.5s_ease-out]`}
     >
       <div className="container mx-auto px-4 py-3">
-        <div className="flex justify-end items-center">
+        <div className="flex items-center justify-between gap-4">
+          <div className="text-white text-lg md:text-3xl ms-[50px] font-extrabold tracking-wide whitespace-nowrap">
+            SUKANTH R
+          </div>
+
           {/* Desktop Navigation - on the right */}
-          <nav className="hidden md:block my-3">
+          <nav className="hidden md:block my-3 ml-auto">
             <ul className="flex space-x-[60px]">
               {navLinks.map((link) => (
                 <li key={link.to}>
                   <Link
-                    activeClass="text-gray-800 font-semibold"
+                    activeClass="active-nav"
                     to={link.to}
                     smooth={true}
                     duration={500}
                     spy={true}
                     offset={-80}
-                    className="text-white text-lg cursor-pointer transition-colors duration-200 hover:text-pink-500"
+                    className="text-white text-lg font-bold cursor-pointer transition-colors duration-200 hover:text-black"
                   >
                     {link.name}
                   </Link>
@@ -83,7 +87,7 @@ const Header = () => {
             {navLinks.map((link) => (
               <li key={link.to}>
                 <Link
-                  activeClass="text-blue-300 font-semibold"
+                  activeClass="active-nav"
                   to={link.to}
                   smooth={true}
                   duration={500}

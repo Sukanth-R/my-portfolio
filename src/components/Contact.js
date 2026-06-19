@@ -14,13 +14,13 @@ const Contact = () => {
     >
       <style>
         {`
-          @keyframes glow {
-            0% { box-shadow: 0 0 5px rgba(139, 92, 246, 0.3); }
-            50% { box-shadow: 0 0 20px rgba(139, 92, 246, 0.5); }
-            100% { box-shadow: 0 0 5px rgba(139, 92, 246, 0.3); }
+          @keyframes contactGlow {
+            0% { box-shadow: 0 0 5px rgba(180, 18, 27, 0.28); }
+            50% { box-shadow: 0 0 20px rgba(180, 18, 27, 0.55); }
+            100% { box-shadow: 0 0 5px rgba(180, 18, 27, 0.28); }
           }
-          .glow-hover:hover {
-            animation: glow 1.5s ease-in-out infinite;
+          .contact-glow-hover:hover {
+            animation: contactGlow 1.5s ease-in-out infinite;
           }
           section#contact {
             margin-bottom: -1px; /* Ensure no gap between Contact and Footer */
@@ -29,7 +29,7 @@ const Contact = () => {
       </style>
       <div className="container mx-auto max-w-5xl">
         <motion.h2 
-          className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-pink-500 text-4xl md:text-6xl font-extrabold text-center mb-16 tracking-tight"
+          className="text-transparent bg-clip-text bg-gradient-to-r from-[#b4121b] to-red-500 text-4xl md:text-6xl font-extrabold text-center mb-16 tracking-tight"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -44,9 +44,9 @@ const Contact = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="relative bg-gradient-to-br from-white/10 to-white/5 rounded-2xl border border-white/20 p-8 hover:border-violet-500/50 glow-hover transition-all duration-500 backdrop-blur-md">
-              <div className="absolute inset-0 bg-gradient-to-r from-violet-500/10 to-pink-500/10 opacity-0 hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
-              <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-pink-400 text-xl md:text-2xl font-bold mb-6 relative">
+            <div className="relative bg-gradient-to-br from-white/10 to-white/5 rounded-2xl border border-white/20 p-8 hover:border-red-800/50 contact-glow-hover transition-all duration-500 backdrop-blur-md">
+              <div className="absolute inset-0 bg-gradient-to-r from-red-500/10 to-red-800/10 opacity-0 hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
+              <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-[#b4121b] to-red-500 text-xl md:text-2xl font-bold mb-6 relative">
                 Direct Contact
               </h3>
               
@@ -57,7 +57,7 @@ const Contact = () => {
                       <p className="text-white/80 text-sm">Phone</p>
                       <a 
                         href="tel:+919360515345" 
-                        className="text-white hover:text-violet-300 transition-colors text-lg md:text-xl font-semibold"
+                        className="text-white hover:text-red-300 transition-colors text-lg md:text-xl font-semibold"
                       >
                         +91 93605 15345
                       </a>
@@ -65,7 +65,7 @@ const Contact = () => {
                   </div>
                   <motion.a
                     href="tel:+919360515345"
-                    className="p-3 bg-violet-500/20 w-12 h-12 hover:bg-violet-500/30 text-violet-300 rounded-full border border-violet-500/30 transition-all flex items-center justify-center group-hover:scale-110"
+                    className="p-3 bg-red-500/20 w-12 h-12 hover:bg-red-500/30 text-red-300 rounded-full border border-red-500/30 transition-all flex items-center justify-center group-hover:scale-110"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                   >
@@ -79,7 +79,7 @@ const Contact = () => {
                       <p className="text-white/80 text-sm">Email</p>
                       <a 
                         href="mailto:sukanth0021@gmail.com" 
-                        className="text-white hover:text-pink-300 transition-colors text-lg md:text-xl font-semibold"
+                        className="text-white hover:text-red-300 transition-colors text-lg md:text-xl font-semibold"
                       >
                         sukanth0021@gmail.com
                       </a>
@@ -87,7 +87,7 @@ const Contact = () => {
                   </div>
                   <motion.a
                     href="mailto:sukanth0021@gmail.com"
-                    className="p-3 bg-pink-500/20 w-12 h-12 hover:bg-pink-500/30 text-pink-300 rounded-full border border-pink-500/30 transition-all flex items-center justify-center group-hover:scale-110"
+                    className="p-3 bg-red-500/20 w-12 h-12 hover:bg-red-500/30 text-red-300 rounded-full border border-red-500/30 transition-all flex items-center justify-center group-hover:scale-110"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                   >
@@ -97,9 +97,9 @@ const Contact = () => {
               </div>
             </div>
             
-            <div className="relative bg-gradient-to-br from-white/10 to-white/5 rounded-2xl border border-white/20 p-8 hover:border-violet-500/50 glow-hover transition-all duration-500 backdrop-blur-md">
-              <div className="absolute inset-0 bg-gradient-to-r from-violet-500/10 to-pink-500/10 opacity-0 hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
-              <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-pink-400 text-xl md:text-2xl font-bold mb-6 relative">
+            <div className="relative bg-gradient-to-br from-white/10 to-white/5 rounded-2xl border border-white/20 p-8 hover:border-red-800/50 contact-glow-hover transition-all duration-500 backdrop-blur-md">
+              <div className="absolute inset-0 bg-gradient-to-r from-red-500/10 to-red-800/10 opacity-0 hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
+              <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-[#b4121b] to-red-500 text-xl md:text-2xl font-bold mb-6 relative">
                 Availability
               </h3>
               <p className="text-white/80 text-sm md:text-base leading-relaxed">

@@ -81,13 +81,13 @@ const Achievements = () => {
     >
       <style>
         {`
-          @keyframes glow {
-            0% { box-shadow: 0 0 5px rgba(139, 92, 246, 0.3); }
-            50% { box-shadow: 0 0 20px rgba(139, 92, 246, 0.5); }
-            100% { box-shadow: 0 0 5px rgba(139, 92, 246, 0.3); }
+          @keyframes achievementGlow {
+            0% { box-shadow: 0 0 5px rgba(180, 18, 27, 0.28); }
+            50% { box-shadow: 0 0 20px rgba(180, 18, 27, 0.55); }
+            100% { box-shadow: 0 0 5px rgba(180, 18, 27, 0.28); }
           }
-          .glow-hover:hover {
-            animation: glow 1.5s ease-in-out infinite;
+          .achievement-glow-hover:hover {
+            animation: achievementGlow 1.5s ease-in-out infinite;
           }
           .mobile-achievement-title {
             white-space: normal;
@@ -98,7 +98,7 @@ const Achievements = () => {
       </style>
       <div className="container mx-auto max-w-7xl">
         <motion.h2 
-          className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-pink-500 text-4xl md:text-6xl font-extrabold text-center mb-20 tracking-tight"
+          className="text-transparent bg-clip-text bg-gradient-to-r from-[#b4121b] to-red-500 text-4xl md:text-6xl font-extrabold text-center mb-20 tracking-tight"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -113,21 +113,21 @@ const Achievements = () => {
               <React.Fragment key={achievement.id}>
                 <motion.div
                   ref={(el) => (cardRefs.current[achievement.id] = el)}
-                  className="relative aspect-square cursor-pointer rounded-2xl overflow-hidden border border-white/20 hover:border-violet-500/50 glow-hover"
+                  className="relative aspect-square cursor-pointer rounded-2xl overflow-hidden border border-white/20 hover:border-red-800/50 achievement-glow-hover"
                   onClick={() => handleCardClick(achievement.id)}
                   layoutId={`mobile-card-${achievement.id}`}
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.4 }}
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-violet-500/10 to-pink-500/10 opacity-0 hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-red-500/10 to-red-800/10 opacity-0 hover:opacity-100 transition-opacity duration-500"></div>
                   <img 
                     src={achievement.image} 
                     alt={achievement.title}
                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
-                    <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-violet-300 to-pink-300 text-sm font-semibold w-full mobile-achievement-title">
+                    <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-[#b4121b] to-red-400 text-sm font-semibold w-full mobile-achievement-title">
                       {achievement.title}
                     </h3>
                   </div>
@@ -150,7 +150,7 @@ const Achievements = () => {
                         className="w-full h-full object-cover"
                       />
                       <motion.button 
-                        className="absolute top-4 right-4 bg-black/50 rounded-full p-2.5 text-white glow-hover"
+                        className="absolute top-4 right-4 bg-black/50 rounded-full p-2.5 text-white achievement-glow-hover"
                         onClick={() => setSelectedId(null)}
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
@@ -162,7 +162,7 @@ const Achievements = () => {
                     <div className="p-6">
                       <div className="flex items-center mb-4">
                         <FiAward className="text-yellow-400 text-2xl mr-3" />
-                        <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-pink-400 text-xl font-bold">
+                        <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-[#b4121b] to-red-500 text-xl font-bold">
                           {achievement.title}
                         </h3>
                       </div>
@@ -178,7 +178,7 @@ const Achievements = () => {
                           href={achievement.certificateLink}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="w-full py-3 bg-gradient-to-r from-violet-500/30 to-pink-500/30 text-white rounded-lg text-sm flex items-center justify-center gap-2 hover:from-violet-500/40 hover:to-pink-500/40 transition-all glow-hover"
+                          className="w-full py-3 bg-gradient-to-r from-red-500/30 to-red-800/30 text-white rounded-lg text-sm flex items-center justify-center gap-2 hover:from-red-500/40 hover:to-red-800/40 transition-all achievement-glow-hover"
                           whileHover={{ scale: 1.03 }}
                           whileTap={{ scale: 0.97 }}
                         >
@@ -199,13 +199,13 @@ const Achievements = () => {
             {achievements.map((achievement, index) => (
               <motion.div
                 key={achievement.id}
-                className="relative bg-gradient-to-br from-white/10 to-white/5 rounded-2xl border border-white/20 hover:border-violet-500/50 glow-hover overflow-hidden transition-all duration-500"
+                className="relative bg-gradient-to-br from-white/10 to-white/5 rounded-2xl border border-white/20 hover:border-red-800/50 achievement-glow-hover overflow-hidden transition-all duration-500"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ y: -8, boxShadow: '0 10px 30px rgba(139, 92, 246, 0.2)' }}
+                whileHover={{ y: -8, boxShadow: '0 10px 30px rgba(180, 18, 27, 0.25)' }}
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-violet-500/10 to-pink-500/10 opacity-0 hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-red-500/10 to-red-800/10 opacity-0 hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="h-56 overflow-hidden relative">
                   <img 
                     src={achievement.image} 
@@ -215,7 +215,7 @@ const Achievements = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
                     <div className="flex items-center">
                       <FiAward className="text-yellow-400 text-3xl mr-4" />
-                      <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-pink-400 text-xl font-bold">
+                      <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-[#b4121b] to-red-500 text-xl font-bold">
                         {achievement.title}
                       </h3>
                     </div>
@@ -235,7 +235,7 @@ const Achievements = () => {
                       href={achievement.certificateLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full py-3 bg-gradient-to-r from-violet-500/30 to-pink-500/30 text-white rounded-lg text-sm flex items-center justify-center gap-2 hover:from-violet-500/40 hover:to-pink-500/40 transition-all glow-hover"
+                      className="w-full py-3 bg-gradient-to-r from-red-500/30 to-red-800/30 text-white rounded-lg text-sm flex items-center justify-center gap-2 hover:from-red-500/40 hover:to-red-800/40 transition-all achievement-glow-hover"
                       whileHover={{ scale: 1.03 }}
                       whileTap={{ scale: 0.97 }}
                     >

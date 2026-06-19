@@ -42,13 +42,13 @@ const Home = () => {
       <a 
         href="https://drive.google.com/file/d/1WdHmLvdcA17YNikO5pJzHDZ1dooBz6pU/view?usp=drive_link" 
         download
-        className="bg-gradient-to-r from-violet-500 to-pink-500 text-white px-6 py-2 md:px-10 md:py-3 rounded-3xl font-medium hover:opacity-90 transition-opacity text-center text-sm md:text-base whitespace-nowrap"
+        className="bg-[#b4121b] text-white px-6 py-2 md:px-10 md:py-3 rounded-3xl font-medium hover:opacity-90 transition-opacity text-center text-sm md:text-base whitespace-nowrap"
       >
         Resume
       </a>
       <a 
         href="#contact" 
-        className="bg-gradient-to-r from-violet-500 to-pink-500 text-white px-4 py-2 md:px-6 md:py-3 rounded-3xl font-medium hover:opacity-90 transition-opacity text-center text-sm md:text-base whitespace-nowrap"
+        className="bg-[#b4121b] text-white px-4 py-2 md:px-6 md:py-3 rounded-3xl font-medium hover:opacity-90 transition-opacity text-center text-sm md:text-base whitespace-nowrap"
       >
         Contact Me
       </a>
@@ -58,7 +58,7 @@ const Home = () => {
   // Split text into letters for animation
   const hiText = "Hi, I'm".split('');
   const nameText = "SUKANTH R".split('');
-  const titleText = "Full Stack Developer".split('');
+  const titleText = "Fresh Graduate".split('');
   const degreeText = "B.TECH Information Technology".split('');
 
   return (

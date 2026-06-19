@@ -25,13 +25,13 @@ const Footer = () => {
     >
       <style>
         {`
-          @keyframes glow {
-            0% { box-shadow: 0 0 5px rgba(139, 92, 246, 0.3); }
-            50% { box-shadow: 0 0 20px rgba(139, 92, 246, 0.5); }
-            100% { box-shadow: 0 0 5px rgba(139, 92, 246, 0.3); }
+          @keyframes footerGlow {
+            0% { box-shadow: 0 0 5px rgba(180, 18, 27, 0.28); }
+            50% { box-shadow: 0 0 20px rgba(180, 18, 27, 0.55); }
+            100% { box-shadow: 0 0 5px rgba(180, 18, 27, 0.28); }
           }
-          .glow-hover:hover {
-            animation: glow 1.5s ease-in-out infinite;
+          .footer-glow-hover:hover {
+            animation: footerGlow 1.5s ease-in-out infinite;
           }
         `}
       </style>
@@ -44,10 +44,10 @@ const Footer = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-pink-500 text-4xl md:text-5xl font-extrabold tracking-tight">
+            <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-[#b4121b] to-red-500 text-4xl md:text-5xl font-extrabold tracking-tight">
               SUKANTH R
             </h3>
-            <p className="text-white/70 text-sm md:text-base mt-2">Full Stack Developer</p>
+            <p className="text-white/70 text-sm md:text-base mt-2">Fresh Graduate in B.Tech Information Technology</p>
           </motion.div>
           
           {/* Navigation Links */}
@@ -61,13 +61,12 @@ const Footer = () => {
               {navLinks.map((link) => (
                 <li key={link.to}>
                   <Link
-                    activeClass="text-violet-300 font-semibold"
                     to={link.to}
                     smooth={true}
                     duration={500}
                     spy={true}
                     offset={-80}
-                    className="text-white/80 text-sm md:text-base cursor-pointer transition-colors duration-300 hover:text-violet-300"
+                    className="text-white/80 text-sm md:text-base cursor-pointer transition-colors duration-300"
                   >
                     {link.name}
                   </Link>
@@ -87,7 +86,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/sukanth-r-24638a259"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-blue-600/20 hover:bg-blue-600/30 text-blue-300 rounded-full border border-blue-600/30 transition-all glow-hover w-12 h-12 flex items-center justify-center"
+              className="p-3 bg-red-600/20 hover:bg-red-600/30 text-red-300 rounded-full border border-red-600/30 transition-all footer-glow-hover w-12 h-12 flex items-center justify-center"
               whileHover={{ y: -5, scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -98,7 +97,7 @@ const Footer = () => {
               href="https://wa.me/919360515345"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-green-600/20 hover:bg-green-600/30 text-green-300 rounded-full border border-green-600/30 transition-all glow-hover w-12 h-12 flex items-center justify-center"
+              className="p-3 bg-red-600/20 hover:bg-red-600/30 text-red-300 rounded-full border border-red-600/30 transition-all footer-glow-hover w-12 h-12 flex items-center justify-center"
               whileHover={{ y: -5, scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -109,7 +108,7 @@ const Footer = () => {
               href="https://github.com/Sukanth-R"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-purple-600/20 hover:bg-purple-600/30 text-purple-300 rounded-full border border-purple-600/30 transition-all glow-hover w-12 h-12 flex items-center justify-center"
+              className="p-3 bg-red-600/20 hover:bg-red-600/30 text-red-300 rounded-full border border-red-600/30 transition-all footer-glow-hover w-12 h-12 flex items-center justify-center"
               whileHover={{ y: -5, scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
