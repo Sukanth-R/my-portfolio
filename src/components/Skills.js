@@ -6,8 +6,8 @@ const Skills = () => {
       title: 'Languages',
       skills: [
         { name: 'Python', icon: 'https://cdn.pixabay.com/photo/2024/03/31/02/11/python-8665904_1280.png' },
-        { name: 'Java', icon: 'https://brandlogos.net/wp-content/uploads/2021/11/java-logo-512x512.png' },
-        { name: 'C', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1853px-C_Programming_Language.svg.png' }
+        { name: 'Java', icon: 'https://img.icons8.com/color/1200/java-coffee-cup-logo--v2.jpg' },
+        { name: 'C', icon: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1920px-C_Programming_Language.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail' }
       ]
     },
     {
